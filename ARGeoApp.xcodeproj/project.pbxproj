@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AB4FBAC2DB5572800CA7F1F /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB4FBAB2DB5572800CA7F1F /* ARKit.framework */; };
+		1AB4FBAE2DB5573500CA7F1F /* RealityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB4FBAD2DB5573500CA7F1F /* RealityKit.framework */; };
+		1AB4FBBA2DB5632900CA7F1F /* ARGeoApp-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AB4FBB92DB5632900CA7F1F /* ARGeoApp-Info.plist */; };
+		1AB4FBCC2DB8379C00CA7F1F /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB4FBCB2DB8379C00CA7F1F /* SplashView.swift */; };
+		1AB4FBD02DB8381B00CA7F1F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB4FBCF2DB8381B00CA7F1F /* LoginView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AB4FB7A2DB5509A00CA7F1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB4FB642DB5509700CA7F1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AB4FB6B2DB5509700CA7F1F;
+			remoteInfo = ARGeoApp;
+		};
+		1AB4FB842DB5509A00CA7F1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AB4FB642DB5509700CA7F1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AB4FB6B2DB5509700CA7F1F;
+			remoteInfo = ARGeoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AB4FB6C2DB5509700CA7F1F /* ARGeoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARGeoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AB4FB792DB5509A00CA7F1F /* ARGeoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARGeoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AB4FB832DB5509A00CA7F1F /* ARGeoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARGeoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AB4FBAB2DB5572800CA7F1F /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+		1AB4FBAD2DB5573500CA7F1F /* RealityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealityKit.framework; path = System/Library/Frameworks/RealityKit.framework; sourceTree = SDKROOT; };
+		1AB4FBB92DB5632900CA7F1F /* ARGeoApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ARGeoApp-Info.plist"; sourceTree = "<group>"; };
+		1AB4FBCB2DB8379C00CA7F1F /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		1AB4FBCF2DB8381B00CA7F1F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1AB4FBBC2DB5660E00CA7F1F /* Exceptions for "ARGeoApp" folder in "ARGeoApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1AB4FB6B2DB5509700CA7F1F /* ARGeoApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1AB4FB6E2DB5509700CA7F1F /* ARGeoApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1AB4FBBC2DB5660E00CA7F1F /* Exceptions for "ARGeoApp" folder in "ARGeoApp" target */,
+			);
+			path = ARGeoApp;
+			sourceTree = "<group>";
+		};
+		1AB4FB7C2DB5509A00CA7F1F /* ARGeoAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ARGeoAppTests;
+			sourceTree = "<group>";
+		};
+		1AB4FB862DB5509A00CA7F1F /* ARGeoAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ARGeoAppUITests;
+			sourceTree = "<group>";
+		};
+		1AB4FBA62DB5551500CA7F1F /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1AB4FBBE2DB7D5F900CA7F1F /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1AB4FBC22DB7D63A00CA7F1F /* Network */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AB4FB692DB5509700CA7F1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB4FBAE2DB5573500CA7F1F /* RealityKit.framework in Frameworks */,
+				1AB4FBAC2DB5572800CA7F1F /* ARKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AB4FB762DB5509A00CA7F1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AB4FB802DB5509A00CA7F1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AB4FB632DB5509700CA7F1F = {
+			isa = PBXGroup;
+			children = (
+				1AB4FBCF2DB8381B00CA7F1F /* LoginView.swift */,
+				1AB4FBCB2DB8379C00CA7F1F /* SplashView.swift */,
+				1AB4FBC22DB7D63A00CA7F1F /* Network */,
+				1AB4FBBE2DB7D5F900CA7F1F /* Models */,
+				1AB4FBB92DB5632900CA7F1F /* ARGeoApp-Info.plist */,
+				1AB4FBA62DB5551500CA7F1F /* Views */,
+				1AB4FB6E2DB5509700CA7F1F /* ARGeoApp */,
+				1AB4FB7C2DB5509A00CA7F1F /* ARGeoAppTests */,
+				1AB4FB862DB5509A00CA7F1F /* ARGeoAppUITests */,
+				1AB4FBAA2DB5572800CA7F1F /* Frameworks */,
+				1AB4FB6D2DB5509700CA7F1F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1AB4FB6D2DB5509700CA7F1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AB4FB6C2DB5509700CA7F1F /* ARGeoApp.app */,
+				1AB4FB792DB5509A00CA7F1F /* ARGeoAppTests.xctest */,
+				1AB4FB832DB5509A00CA7F1F /* ARGeoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AB4FBAA2DB5572800CA7F1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AB4FBAD2DB5573500CA7F1F /* RealityKit.framework */,
+				1AB4FBAB2DB5572800CA7F1F /* ARKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AB4FB6B2DB5509700CA7F1F /* ARGeoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AB4FB8D2DB5509A00CA7F1F /* Build configuration list for PBXNativeTarget "ARGeoApp" */;
+			buildPhases = (
+				1AB4FB682DB5509700CA7F1F /* Sources */,
+				1AB4FB692DB5509700CA7F1F /* Frameworks */,
+				1AB4FB6A2DB5509700CA7F1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1AB4FB6E2DB5509700CA7F1F /* ARGeoApp */,
+				1AB4FBA62DB5551500CA7F1F /* Views */,
+				1AB4FBBE2DB7D5F900CA7F1F /* Models */,
+				1AB4FBC22DB7D63A00CA7F1F /* Network */,
+			);
+			name = ARGeoApp;
+			packageProductDependencies = (
+			);
+			productName = ARGeoApp;
+			productReference = 1AB4FB6C2DB5509700CA7F1F /* ARGeoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AB4FB782DB5509A00CA7F1F /* ARGeoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AB4FB902DB5509A00CA7F1F /* Build configuration list for PBXNativeTarget "ARGeoAppTests" */;
+			buildPhases = (
+				1AB4FB752DB5509A00CA7F1F /* Sources */,
+				1AB4FB762DB5509A00CA7F1F /* Frameworks */,
+				1AB4FB772DB5509A00CA7F1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AB4FB7B2DB5509A00CA7F1F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1AB4FB7C2DB5509A00CA7F1F /* ARGeoAppTests */,
+			);
+			name = ARGeoAppTests;
+			packageProductDependencies = (
+			);
+			productName = ARGeoAppTests;
+			productReference = 1AB4FB792DB5509A00CA7F1F /* ARGeoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1AB4FB822DB5509A00CA7F1F /* ARGeoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AB4FB932DB5509A00CA7F1F /* Build configuration list for PBXNativeTarget "ARGeoAppUITests" */;
+			buildPhases = (
+				1AB4FB7F2DB5509A00CA7F1F /* Sources */,
+				1AB4FB802DB5509A00CA7F1F /* Frameworks */,
+				1AB4FB812DB5509A00CA7F1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AB4FB852DB5509A00CA7F1F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1AB4FB862DB5509A00CA7F1F /* ARGeoAppUITests */,
+			);
+			name = ARGeoAppUITests;
+			packageProductDependencies = (
+			);
+			productName = ARGeoAppUITests;
+			productReference = 1AB4FB832DB5509A00CA7F1F /* ARGeoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AB4FB642DB5509700CA7F1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					1AB4FB6B2DB5509700CA7F1F = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					1AB4FB782DB5509A00CA7F1F = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 1AB4FB6B2DB5509700CA7F1F;
+					};
+					1AB4FB822DB5509A00CA7F1F = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 1AB4FB6B2DB5509700CA7F1F;
+					};
+				};
+			};
+			buildConfigurationList = 1AB4FB672DB5509700CA7F1F /* Build configuration list for PBXProject "ARGeoApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1AB4FB632DB5509700CA7F1F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1AB4FB6D2DB5509700CA7F1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AB4FB6B2DB5509700CA7F1F /* ARGeoApp */,
+				1AB4FB782DB5509A00CA7F1F /* ARGeoAppTests */,
+				1AB4FB822DB5509A00CA7F1F /* ARGeoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AB4FB6A2DB5509700CA7F1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB4FBBA2DB5632900CA7F1F /* ARGeoApp-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AB4FB772DB5509A00CA7F1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AB4FB812DB5509A00CA7F1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AB4FB682DB5509700CA7F1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB4FBD02DB8381B00CA7F1F /* LoginView.swift in Sources */,
+				1AB4FBCC2DB8379C00CA7F1F /* SplashView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AB4FB752DB5509A00CA7F1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AB4FB7F2DB5509A00CA7F1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AB4FB7B2DB5509A00CA7F1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AB4FB6B2DB5509700CA7F1F /* ARGeoApp */;
+			targetProxy = 1AB4FB7A2DB5509A00CA7F1F /* PBXContainerItemProxy */;
+		};
+		1AB4FB852DB5509A00CA7F1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AB4FB6B2DB5509700CA7F1F /* ARGeoApp */;
+			targetProxy = 1AB4FB842DB5509A00CA7F1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1AB4FB8B2DB5509A00CA7F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1AB4FB8C2DB5509A00CA7F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AB4FB8E2DB5509A00CA7F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9BJJ5P58P2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ARGeoApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Mi serve usare la camera";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "L’app richiede l’accesso alla posizione per mostrare le coordinate e posizionare gli oggetti in AR";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TavernaDelDrago.ARGeoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AB4FB8F2DB5509A00CA7F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9BJJ5P58P2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ARGeoApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Mi serve usare la camera";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "L’app richiede l’accesso alla posizione per mostrare le coordinate e posizionare gli oggetti in AR";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TavernaDelDrago.ARGeoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1AB4FB912DB5509A00CA7F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TavernaDelDrago.ARGeoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARGeoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ARGeoApp";
+			};
+			name = Debug;
+		};
+		1AB4FB922DB5509A00CA7F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TavernaDelDrago.ARGeoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARGeoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ARGeoApp";
+			};
+			name = Release;
+		};
+		1AB4FB942DB5509A00CA7F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TavernaDelDrago.ARGeoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARGeoApp;
+			};
+			name = Debug;
+		};
+		1AB4FB952DB5509A00CA7F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TavernaDelDrago.ARGeoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARGeoApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AB4FB672DB5509700CA7F1F /* Build configuration list for PBXProject "ARGeoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AB4FB8B2DB5509A00CA7F1F /* Debug */,
+				1AB4FB8C2DB5509A00CA7F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AB4FB8D2DB5509A00CA7F1F /* Build configuration list for PBXNativeTarget "ARGeoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AB4FB8E2DB5509A00CA7F1F /* Debug */,
+				1AB4FB8F2DB5509A00CA7F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AB4FB902DB5509A00CA7F1F /* Build configuration list for PBXNativeTarget "ARGeoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AB4FB912DB5509A00CA7F1F /* Debug */,
+				1AB4FB922DB5509A00CA7F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AB4FB932DB5509A00CA7F1F /* Build configuration list for PBXNativeTarget "ARGeoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AB4FB942DB5509A00CA7F1F /* Debug */,
+				1AB4FB952DB5509A00CA7F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AB4FB642DB5509700CA7F1F /* Project object */;
+}

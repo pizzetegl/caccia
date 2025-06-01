@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key>
+    <string>com.TavernaDelDrago.ARGeoApp</string>
+    <key>NSCameraUsageDescription</key>
+    <string>L’app richiede l’accesso alla fotocamera per la modalità AR.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>L’app richiede l’accesso alla posizione per mostrare le coordinate e posizionare oggetti in AR.</string>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
+</dict>
+</plist>
